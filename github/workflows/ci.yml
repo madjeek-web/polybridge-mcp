@@ -1,0 +1,42 @@
+name: CI
+
+# This workflow runs on every push and on every pull request to main.
+# It checks that the code compiles and passes lint.
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build and Lint
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        # Test on two Node.js LTS versions to catch version-specific issues.
+        node-version: [20.x, 22.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Compile TypeScript
+        run: npm run build
+
+      - name: Lint
+        run: npm run lint
