@@ -1,0 +1,19 @@
+{
+  "id"         : "blender-to-notion",
+  "name"       : "Blender to Notion",
+  "description": "Renders the current Blender scene and creates a Notion documentation page with the render.",
+  "bridges"    : ["blender", "notion"],
+  "prompt"     : "Render the current Blender scene at 800x600 resolution with 128 samples. Then create a Notion page inside parent page {parentId} with the title '{title}'. In the page body, describe what is in the scene based on what you can see in the render, and embed the render image as the page cover if possible.",
+  "params"     : [
+    {
+      "name"       : "title",
+      "description": "Title for the Notion documentation page",
+      "default"    : "3D Scene Documentation"
+    },
+    {
+      "name"       : "parentId",
+      "description": "Notion parent page ID (found in the page URL)",
+      "default"    : "YOUR_NOTION_PAGE_ID"
+    }
+  ]
+}

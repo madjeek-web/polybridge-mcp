@@ -1,0 +1,14 @@
+{
+  "id"         : "daily-report-telegram",
+  "name"       : "Daily Report via Telegram",
+  "description": "Triggers an n8n workflow that sends a daily summary via Telegram.",
+  "bridges"    : ["n8n"],
+  "prompt"     : "Find the n8n workflow named '{workflowName}' and trigger it. Then check the execution result and tell me if it succeeded or failed. If it failed, describe what went wrong based on the execution data.",
+  "params"     : [
+    {
+      "name"       : "workflowName",
+      "description": "Exact name of the n8n workflow to trigger",
+      "default"    : "Daily Telegram Report"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id"         : "notion-to-blender",
+  "name"       : "Notion to Blender",
+  "description": "Reads a Notion page describing a 3D scene and builds it in Blender.",
+  "bridges"    : ["notion", "blender"],
+  "prompt"     : "Read the Notion page with ID '{pageId}'. Interpret its content as a description of a 3D scene. Then build that scene in Blender using available objects and materials. When finished, render the scene and describe what you built. Be creative with positioning and scale to make an interesting composition.",
+  "params"     : [
+    {
+      "name"       : "pageId",
+      "description": "ID of the Notion page describing the 3D scene",
+      "default"    : "YOUR_NOTION_PAGE_ID"
+    }
+  ]
+}

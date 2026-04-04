@@ -1,0 +1,19 @@
+{
+  "id"         : "file-summarizer",
+  "name"       : "File Summarizer",
+  "description": "Reads all files in a workspace folder and writes a summary document.",
+  "bridges"    : ["filesystem"],
+  "prompt"     : "List all files in the directory '{directory}'. Read each file and create a single summary document saved to '{outputFile}'. For each file include: the filename, a one-paragraph summary of its content, and the number of lines. Format the output as a clean Markdown document with one section per file.",
+  "params"     : [
+    {
+      "name"       : "directory",
+      "description": "Path to the directory to summarize",
+      "default"    : "./workspace"
+    },
+    {
+      "name"       : "outputFile",
+      "description": "Path to write the summary file",
+      "default"    : "./workspace/summary.md"
+    }
+  ]
+}
