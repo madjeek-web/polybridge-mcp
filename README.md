@@ -1,4 +1,4 @@
-# polybridge-mcp
+# Polybridge Mcp
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -12,6 +12,27 @@
 [![Pedagogical](https://img.shields.io/badge/Made%20for-Learners-F59E0B.svg)]()
 
 ---
+
+
+Here’s what’s unique: no existing project simultaneously combines an MCP hub with n8n as the backbone orchestration engine (not just a target), creative bridges (Blender), a pedagogical transparency layer that makes the invisible visible, and an LLM-agnostic architecture with a ready-to-use “recipes” system.
+
+There are existing MCP gateways (Bifrost, ContextForge, MetaMCP), but none of them simultaneously combine :
+
+n8n as the orchestration backbone (not just a target)
+
+Blender 3D via native WebSocket
+
+A PTL (Pedagogical Transparency Layer) : every tool call logged in readable English, phase by phase
+
+4 LLM adapters (Claude, OpenAI, Gemini, Ollama) in a single repo
+
+A recipe system that can be activated via CLI
+
+An architecture explicitly designed for teaching
+
+
+---
+
 
 **One MCP server. Any LLM. Every tool.**
 
