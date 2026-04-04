@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://github.com/madjeek-web/polybridge-mcp/raw/main/cover_convergence_mcp_2.png" alt="Polybridge Mcp cover image" width="100%" height="100%">
+</p>
+
 # Polybridge Mcp
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
