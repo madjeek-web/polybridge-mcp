@@ -13,6 +13,10 @@
 
 ---
 
+Here’s what’s unique: no existing project simultaneously combines an MCP hub with n8n as the backbone orchestration engine (not just a target), creative bridges (Blender), a pedagogical transparency layer that makes the invisible visible, and an LLM-agnostic architecture with a ready-to-use “recipes” system.
+
+---
+
 **One MCP server. Any LLM. Every tool.**
 
 `polybridge-mcp` is a universal multi-bridge hub built on the [Model Context Protocol](https://modelcontextprotocol.io/). Connect Claude, GPT, Gemini, or any local LLM to n8n workflows, Blender 3D, Notion, your filesystem, and more through a single self-describing server.
