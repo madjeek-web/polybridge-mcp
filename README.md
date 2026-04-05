@@ -408,7 +408,9 @@ docker-compose up -d n8n
 
 Then go to `http://localhost:5678`, create an API key in `Settings > API`, and paste it into your config file.
 
----
+<p align="center">
+  <img src="https://github.com/madjeek-web/about/raw/main/hr.png" alt="separator" width="300" height="3">
+</p>
 
 ### Blender bridge
 
