@@ -447,7 +447,9 @@ Claude breaks this into a sequence of Blender commands :
 3. Select `bridges/blender/polybridge_addon.py`
 4. Enable the addon and click "Start WebSocket Server"
 
----
+<p align="center">
+  <img src="https://github.com/madjeek-web/about/raw/main/hr.png" alt="separator" width="300" height="3">
+</p>
 
 ### Notion bridge
 
@@ -524,7 +526,9 @@ console.log(result)
 | `GeminiAdapter` | Google Gemini | `src/adapters/llm/gemini.ts` |
 | `OllamaAdapter` | Any local Ollama model | `src/adapters/llm/ollama.ts` |
 
----
+<p align="center">
+  <img src="https://github.com/madjeek-web/about/raw/main/hr.png" alt="separator" width="300" height="3">
+</p>
 
 ## Recipes
 
